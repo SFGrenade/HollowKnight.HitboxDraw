@@ -48,6 +48,8 @@ namespace ShowHitboxes
 
         public override string GetVersion() => "1.0.0";
 
+        public override int LoadPriority() => 9999;
+
         public void Unload()
         {
             UnityEngine.SceneManagement.SceneManager.activeSceneChanged -= SpawnHitboxes;
